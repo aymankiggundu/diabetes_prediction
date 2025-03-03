@@ -59,4 +59,4 @@ This project was developed by Kiggundu Sulaiman (Ayman) and Twongiirwe Susan, Co
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Makerere University License - see the LICENSE file for details.
