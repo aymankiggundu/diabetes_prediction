@@ -1,0 +1,7 @@
+Metric,Value
+Training Time (seconds),0.0021791458129882812
+Accuracy,0.875
+Precision,0.6666666666666666
+Recall (Sensitivity),1.0
+F1 Score,0.8
+AUC,0.9166666666666667
