@@ -1,7 +1,19 @@
-Metric,Value
-Training Time (seconds),0.0021791458129882812
-Accuracy,0.875
-Precision,0.6666666666666666
-Recall (Sensitivity),1.0
-F1 Score,0.8
-AUC,0.9166666666666667
+Model,Run,Metric,Value
+Decision Tree,Run 1,Training Time (seconds),0.0020987987518310547
+Decision Tree,Run 1,Accuracy,0.875
+Decision Tree,Run 1,Precision,0.6666666666666666
+Decision Tree,Run 1,Recall (Sensitivity),1.0
+Decision Tree,Run 1,F1 Score,0.8
+Decision Tree,Run 1,AUC,0.9166666666666667
+Decision Tree,Run 1,Training Time (seconds),0.0020639896392822266
+Decision Tree,Run 1,Accuracy,0.875
+Decision Tree,Run 1,Precision,0.6666666666666666
+Decision Tree,Run 1,Recall (Sensitivity),1.0
+Decision Tree,Run 1,F1 Score,0.8
+Decision Tree,Run 1,AUC,0.9166666666666667
+Decision Tree,Run 2,Training Time (seconds),0.002070903778076172
+Decision Tree,Run 2,Accuracy,0.875
+Decision Tree,Run 2,Precision,0.6666666666666666
+Decision Tree,Run 2,Recall (Sensitivity),1.0
+Decision Tree,Run 2,F1 Score,0.8
+Decision Tree,Run 2,AUC,0.9166666666666667

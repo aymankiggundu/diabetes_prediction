@@ -1,6 +1,8 @@
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
 import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
+import joblib
 import time
 from tabulate import tabulate
 from colorama import Fore, Style, init
@@ -35,12 +37,11 @@ class DecisionTreeModel:
 # Example usage:
 if __name__ == "__main__":
     # Load your dataset
-    data = pd.read_csv('./data/raw/df.csv')
-    X = data.drop('Diabetic', axis=1)
-    y = data['Diabetic']
+    data = pd.read_csv('/Users/aymankiggundu/Desktop/BCSC/year_two/Year two Semester 2 2025/Machine Learning/ml_space_2/diabetes_prediction/data/raw/df.csv')
+    X = data.drop('Diabetic', axis=1)  # Replace 'Diabetic' with the actual target column name
+    y = data['Diabetic']  # Replace 'Diabetic' with the actual target column name
     
     # Split your data into training and testing sets
-    from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
     # Initialize and train the model
@@ -52,12 +53,18 @@ if __name__ == "__main__":
     
     # Create a DataFrame to store the metrics
     metrics_df = pd.DataFrame({
+        'Model': ['Decision Tree'] * 6,
+        'Run': ['Run 2'] * 6,
         'Metric': ['Training Time (seconds)', 'Accuracy', 'Precision', 'Recall (Sensitivity)', 'F1 Score', 'AUC'],
         'Value': [training_time, accuracy, precision, recall, f1, auc]
     })
     
     # Save the metrics to a CSV file
-    metrics_df.to_csv('model_performance_metrics.csv', index=False)
+    try:
+        existing_metrics_df = pd.read_csv('model_performance_metrics.csv')
+        metrics_df.to_csv('model_performance_metrics.csv', mode='a', index=False, header=False)
+    except pd.errors.EmptyDataError:
+        metrics_df.to_csv('model_performance_metrics.csv', mode='w', index=False, header=True)
     
     # Create a colored version of your metrics DataFrame
     colored_metrics = []
@@ -93,3 +100,6 @@ if __name__ == "__main__":
     # Print the colorful table
     print("\nModel Performance Metrics:")
     print(tabulate(colored_metrics, headers=['Metric', 'Value'], tablefmt='grid'))
+
+# Save the trained model to a .pkl file
+joblib.dump(dt_model.model, 'decision_tree_model.pkl')
