@@ -2,7 +2,7 @@
 
 This project, `Sparse Knowledge Distillation for
 Electrogastrogram Signal Processing to
-Predict Diabetes`, is focused on predicting diabetes using various machine learning models. The goal is to implement and compare different algorithms to determine their effectiveness in predicting diabetes based on a given dataset under different circustances i.e on original dataset, the on denoised dataset and techniques like Sparse learning, Knowledge Distillation and Sparse Knowledge Distillation we added into the model architectures to try and compare the performances of the models.
+Predict Diabetes`, is focused on predicting diabetes using various machine learning models. The goal is to implement and compare different algorithms to determine their effectiveness in predicting diabetes based on a given dataset under different circustances i.e on original dataset, the on denoised dataset and techniques like Sparse learning, Knowledge Distillation and Sparse Knowledge Distillation we added into the model architectures to try and compare the performances of the models. Ypu will notice that decision tree models has the best consistently good performance in all scenarios hence why it was deployed and the brains behind the predicitions on the link below
 
 ## Project Structure
 
