@@ -61,6 +61,8 @@ The project includes a Streamlit app for predicting diabetes based on user input
 
 [http://13.60.230.84:8501/](http://13.60.230.84:8501/)
 
+NB; Use some of the txt files in 'diabetes_prediction/data/raw'some of which are diabetic and the others are not.
+
 ## Contributors
 
 This project was developed by Kiggundu Sulaiman (Ayman) and Twongiirwe Susan, Computer Science Students at CoCIS of Makerere University Kampala, Uganda.
