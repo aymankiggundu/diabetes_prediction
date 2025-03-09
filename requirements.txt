@@ -11,3 +11,5 @@ xgboost==1.4.2
 lightgbm==3.2.1
 catboost==0.26
 pickle-mixin==1.0.2
+python-dateutil<=2.8.2
+urllib3<1.27,>=1.25.4
