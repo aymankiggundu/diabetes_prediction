@@ -17,3 +17,417 @@ Decision Tree,Run 2,Precision,0.6666666666666666
 Decision Tree,Run 2,Recall (Sensitivity),1.0
 Decision Tree,Run 2,F1 Score,0.8
 Decision Tree,Run 2,AUC,0.9166666666666667
+Decision Tree,Run 3,Training Time (seconds),0.005496978759765625
+Decision Tree,Run 3,Accuracy,0.875
+Decision Tree,Run 3,Precision,0.6666666666666666
+Decision Tree,Run 3,Recall (Sensitivity),1.0
+Decision Tree,Run 3,F1 Score,0.8
+Decision Tree,Run 3,AUC,0.9166666666666667
+Decision Tree,Run 4,Training Time (seconds),0.0072820186614990234
+Decision Tree,Run 4,Accuracy,0.875
+Decision Tree,Run 4,Precision,0.6666666666666666
+Decision Tree,Run 4,Recall (Sensitivity),1.0
+Decision Tree,Run 4,F1 Score,0.8
+Decision Tree,Run 4,AUC,0.9166666666666667
+Decision Tree,Run 5 (Denoised),Training Time (seconds),0.0011608600616455078
+Decision Tree,Run 5 (Denoised),Accuracy,1.0
+Decision Tree,Run 5 (Denoised),Precision,1.0
+Decision Tree,Run 5 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 5 (Denoised),F1 Score,1.0
+Decision Tree,Run 5 (Denoised),AUC,1.0
+Decision Tree,Run 6,Training Time (seconds),0.006719112396240234
+Decision Tree,Run 6,Accuracy,0.875
+Decision Tree,Run 6,Precision,0.6666666666666666
+Decision Tree,Run 6,Recall (Sensitivity),1.0
+Decision Tree,Run 6,F1 Score,0.8
+Decision Tree,Run 6,AUC,0.9166666666666667
+Decision Tree,Run 7 (Denoised),Training Time (seconds),0.0010139942169189453
+Decision Tree,Run 7 (Denoised),Accuracy,1.0
+Decision Tree,Run 7 (Denoised),Precision,1.0
+Decision Tree,Run 7 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 7 (Denoised),F1 Score,1.0
+Decision Tree,Run 7 (Denoised),AUC,1.0
+Decision Tree,Run 8,Training Time (seconds),0.005675792694091797
+Decision Tree,Run 8,Accuracy,0.875
+Decision Tree,Run 8,Precision,0.6666666666666666
+Decision Tree,Run 8,Recall (Sensitivity),1.0
+Decision Tree,Run 8,F1 Score,0.8
+Decision Tree,Run 8,AUC,0.9166666666666667
+Decision Tree,Run 9 (Denoised),Training Time (seconds),0.0016701221466064453
+Decision Tree,Run 9 (Denoised),Accuracy,1.0
+Decision Tree,Run 9 (Denoised),Precision,1.0
+Decision Tree,Run 9 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 9 (Denoised),F1 Score,1.0
+Decision Tree,Run 9 (Denoised),AUC,1.0
+Decision Tree,Run 10,Training Time (seconds),0.010576009750366211
+Decision Tree,Run 10,Accuracy,0.875
+Decision Tree,Run 10,Precision,0.6666666666666666
+Decision Tree,Run 10,Recall (Sensitivity),1.0
+Decision Tree,Run 10,F1 Score,0.8
+Decision Tree,Run 10,AUC,0.9166666666666667
+Decision Tree,Run 11 (Denoised),Training Time (seconds),0.0010840892791748047
+Decision Tree,Run 11 (Denoised),Accuracy,1.0
+Decision Tree,Run 11 (Denoised),Precision,1.0
+Decision Tree,Run 11 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 11 (Denoised),F1 Score,1.0
+Decision Tree,Run 11 (Denoised),AUC,1.0
+Decision Tree,Run 12,Training Time (seconds),0.0056078433990478516
+Decision Tree,Run 12,Accuracy,0.875
+Decision Tree,Run 12,Precision,0.6666666666666666
+Decision Tree,Run 12,Recall (Sensitivity),1.0
+Decision Tree,Run 12,F1 Score,0.8
+Decision Tree,Run 12,AUC,0.9166666666666667
+Decision Tree,Run 13 (Denoised),Training Time (seconds),0.0011107921600341797
+Decision Tree,Run 13 (Denoised),Accuracy,1.0
+Decision Tree,Run 13 (Denoised),Precision,1.0
+Decision Tree,Run 13 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 13 (Denoised),F1 Score,1.0
+Decision Tree,Run 13 (Denoised),AUC,1.0
+Decision Tree,Run 14,Training Time (seconds),0.008882761001586914
+Decision Tree,Run 14,Accuracy,0.875
+Decision Tree,Run 14,Precision,0.6666666666666666
+Decision Tree,Run 14,Recall (Sensitivity),1.0
+Decision Tree,Run 14,F1 Score,0.8
+Decision Tree,Run 14,AUC,0.9166666666666667
+Decision Tree,Run 15 (Denoised),Training Time (seconds),0.0017130374908447266
+Decision Tree,Run 15 (Denoised),Accuracy,1.0
+Decision Tree,Run 15 (Denoised),Precision,1.0
+Decision Tree,Run 15 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 15 (Denoised),F1 Score,1.0
+Decision Tree,Run 15 (Denoised),AUC,1.0
+Decision Tree,Run 16,Training Time (seconds),0.005645036697387695
+Decision Tree,Run 16,Accuracy,0.875
+Decision Tree,Run 16,Precision,0.6666666666666666
+Decision Tree,Run 16,Recall (Sensitivity),1.0
+Decision Tree,Run 16,F1 Score,0.8
+Decision Tree,Run 16,AUC,0.9166666666666667
+Decision Tree,Run 17 (Denoised),Training Time (seconds),0.0014600753784179688
+Decision Tree,Run 17 (Denoised),Accuracy,1.0
+Decision Tree,Run 17 (Denoised),Precision,1.0
+Decision Tree,Run 17 (Denoised),Recall (Sensitivity),1.0
+Decision Tree,Run 17 (Denoised),F1 Score,1.0
+Decision Tree,Run 17 (Denoised),AUC,1.0
+Sparse Learning,Run 16,Training Time (seconds),1741512186.763595
+Knowledge Distillation,Run 16,Accuracy,0.875
+Sparse Knowledge Distillation,Run 16,Precision,0.6666666666666666
+Sparse Learning,Run 16,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 16,F1 Score,0.8
+Sparse Knowledge Distillation,Run 16,AUC,0.9166666666666667
+Sparse Learning,Run 16,Training Time (seconds),0.0054073333740234375
+Knowledge Distillation,Run 16,Accuracy,0.625
+Sparse Knowledge Distillation,Run 16,Precision,0.3333333333333333
+Sparse Learning,Run 16,Recall (Sensitivity),0.5
+Knowledge Distillation,Run 16,F1 Score,0.4
+Sparse Knowledge Distillation,Run 16,AUC,0.5833333333333334
+Sparse Learning,Run 16,Training Time (seconds),0.006206989288330078
+Knowledge Distillation,Run 16,Accuracy,0.625
+Sparse Knowledge Distillation,Run 16,Precision,0.3333333333333333
+Sparse Learning,Run 16,Recall (Sensitivity),0.5
+Knowledge Distillation,Run 16,F1 Score,0.4
+Sparse Knowledge Distillation,Run 16,AUC,0.5833333333333334
+Sparse Learning (Denoised),Run 17 (Denoised),Training Time (seconds),1741512186.8215747
+Knowledge Distillation (Denoised),Run 17 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 17 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 17 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 17 (Denoised),Training Time (seconds),0.0013439655303955078
+Knowledge Distillation (Denoised),Run 17 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 17 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 17 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 17 (Denoised),Training Time (seconds),0.0029180049896240234
+Knowledge Distillation (Denoised),Run 17 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 17 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 17 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 17 (Denoised),AUC,1.0
+Gaussian Naive Bayes,Run 18,Training Time (seconds),0.004973888397216797
+Gaussian Naive Bayes,Run 18,Accuracy,0.75
+Gaussian Naive Bayes,Run 18,Precision,0.5
+Gaussian Naive Bayes,Run 18,Recall (Sensitivity),1.0
+Gaussian Naive Bayes,Run 18,F1 Score,0.6666666666666666
+Gaussian Naive Bayes,Run 18,AUC,0.8333333333333334
+Gaussian Naive Bayes,Run 19 (Denoised),Training Time (seconds),0.0010399818420410156
+Gaussian Naive Bayes,Run 19 (Denoised),Accuracy,1.0
+Gaussian Naive Bayes,Run 19 (Denoised),Precision,1.0
+Gaussian Naive Bayes,Run 19 (Denoised),Recall (Sensitivity),1.0
+Gaussian Naive Bayes,Run 19 (Denoised),F1 Score,1.0
+Gaussian Naive Bayes,Run 19 (Denoised),AUC,1.0
+Sparse Learning,Run 18,Training Time (seconds),1741512910.921626
+Knowledge Distillation,Run 18,Accuracy,0.875
+Sparse Knowledge Distillation,Run 18,Precision,0.6666666666666666
+Sparse Learning,Run 18,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 18,F1 Score,0.8
+Sparse Knowledge Distillation,Run 18,AUC,0.9166666666666667
+Sparse Learning,Run 18,Training Time (seconds),0.00669407844543457
+Knowledge Distillation,Run 18,Accuracy,0.75
+Sparse Knowledge Distillation,Run 18,Precision,0.0
+Sparse Learning,Run 18,Recall (Sensitivity),0.0
+Knowledge Distillation,Run 18,F1 Score,0.0
+Sparse Knowledge Distillation,Run 18,AUC,0.5
+Sparse Learning,Run 18,Training Time (seconds),0.006381034851074219
+Knowledge Distillation,Run 18,Accuracy,0.75
+Sparse Knowledge Distillation,Run 18,Precision,0.0
+Sparse Learning,Run 18,Recall (Sensitivity),0.0
+Knowledge Distillation,Run 18,F1 Score,0.0
+Sparse Knowledge Distillation,Run 18,AUC,0.5
+Sparse Learning (Denoised),Run 19 (Denoised),Training Time (seconds),1741512910.987358
+Knowledge Distillation (Denoised),Run 19 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 19 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 19 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 19 (Denoised),Training Time (seconds),0.0012209415435791016
+Knowledge Distillation (Denoised),Run 19 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 19 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 19 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 19 (Denoised),Training Time (seconds),0.003634929656982422
+Knowledge Distillation (Denoised),Run 19 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 19 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 19 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 19 (Denoised),AUC,1.0
+Gaussian Naive Bayes,Run 20,Training Time (seconds),0.003428936004638672
+Gaussian Naive Bayes,Run 20,Accuracy,0.75
+Gaussian Naive Bayes,Run 20,Precision,0.5
+Gaussian Naive Bayes,Run 20,Recall (Sensitivity),1.0
+Gaussian Naive Bayes,Run 20,F1 Score,0.6666666666666666
+Gaussian Naive Bayes,Run 20,AUC,0.8333333333333334
+Gaussian Naive Bayes,Run 21 (Denoised),Training Time (seconds),0.0010943412780761719
+Gaussian Naive Bayes,Run 21 (Denoised),Accuracy,1.0
+Gaussian Naive Bayes,Run 21 (Denoised),Precision,1.0
+Gaussian Naive Bayes,Run 21 (Denoised),Recall (Sensitivity),1.0
+Gaussian Naive Bayes,Run 21 (Denoised),F1 Score,1.0
+Gaussian Naive Bayes,Run 21 (Denoised),AUC,1.0
+Sparse Learning,Run 20,Training Time (seconds),1741513613.6766691
+Knowledge Distillation,Run 20,Accuracy,0.875
+Sparse Knowledge Distillation,Run 20,Precision,0.6666666666666666
+Sparse Learning,Run 20,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 20,F1 Score,0.8
+Sparse Knowledge Distillation,Run 20,AUC,0.9166666666666667
+Sparse Learning,Run 20,Training Time (seconds),0.0059778690338134766
+Knowledge Distillation,Run 20,Accuracy,0.75
+Sparse Knowledge Distillation,Run 20,Precision,0.0
+Sparse Learning,Run 20,Recall (Sensitivity),0.0
+Knowledge Distillation,Run 20,F1 Score,0.0
+Sparse Knowledge Distillation,Run 20,AUC,0.5
+Sparse Learning,Run 20,Training Time (seconds),0.0070912837982177734
+Knowledge Distillation,Run 20,Accuracy,0.75
+Sparse Knowledge Distillation,Run 20,Precision,0.0
+Sparse Learning,Run 20,Recall (Sensitivity),0.0
+Knowledge Distillation,Run 20,F1 Score,0.0
+Sparse Knowledge Distillation,Run 20,AUC,0.5
+Sparse Learning (Denoised),Run 21 (Denoised),Training Time (seconds),1741513613.7414296
+Knowledge Distillation (Denoised),Run 21 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 21 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 21 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 21 (Denoised),Training Time (seconds),0.00146484375
+Knowledge Distillation (Denoised),Run 21 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 21 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 21 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 21 (Denoised),Training Time (seconds),0.0031790733337402344
+Knowledge Distillation (Denoised),Run 21 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 21 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 21 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 21 (Denoised),AUC,1.0
+SVM,Run 22,Training Time (seconds),0.011243104934692383
+SVM,Run 22,Accuracy,0.875
+SVM,Run 22,Precision,0.6666666666666666
+SVM,Run 22,Recall (Sensitivity),1.0
+SVM,Run 22,F1 Score,0.8
+SVM,Run 22,AUC,0.9166666666666667
+SVM,Run 23 (Denoised),Training Time (seconds),0.0016829967498779297
+SVM,Run 23 (Denoised),Accuracy,1.0
+SVM,Run 23 (Denoised),Precision,1.0
+SVM,Run 23 (Denoised),Recall (Sensitivity),1.0
+SVM,Run 23 (Denoised),F1 Score,1.0
+SVM,Run 23 (Denoised),AUC,1.0
+Sparse Learning,Run 22,Training Time (seconds),1741514299.6357179
+Knowledge Distillation,Run 22,Accuracy,0.875
+Sparse Knowledge Distillation,Run 22,Precision,0.6666666666666666
+Sparse Learning,Run 22,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 22,F1 Score,0.8
+Sparse Knowledge Distillation,Run 22,AUC,0.9166666666666667
+Sparse Learning,Run 22,Training Time (seconds),0.0069658756256103516
+Knowledge Distillation,Run 22,Accuracy,0.75
+Sparse Knowledge Distillation,Run 22,Precision,0.5
+Sparse Learning,Run 22,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 22,F1 Score,0.6666666666666666
+Sparse Knowledge Distillation,Run 22,AUC,0.8333333333333334
+Sparse Learning,Run 22,Training Time (seconds),0.007313728332519531
+Knowledge Distillation,Run 22,Accuracy,0.75
+Sparse Knowledge Distillation,Run 22,Precision,0.5
+Sparse Learning,Run 22,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 22,F1 Score,0.6666666666666666
+Sparse Knowledge Distillation,Run 22,AUC,0.8333333333333334
+Sparse Learning (Denoised),Run 23 (Denoised),Training Time (seconds),1741514299.703564
+Knowledge Distillation (Denoised),Run 23 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 23 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 23 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 23 (Denoised),Training Time (seconds),0.001825094223022461
+Knowledge Distillation (Denoised),Run 23 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 23 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 23 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 23 (Denoised),Training Time (seconds),0.003300189971923828
+Knowledge Distillation (Denoised),Run 23 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 23 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 23 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 23 (Denoised),AUC,1.0
+KNN,Run 24,Training Time (seconds),0.006337881088256836
+KNN,Run 24,Accuracy,0.875
+KNN,Run 24,Precision,0.6666666666666666
+KNN,Run 24,Recall (Sensitivity),1.0
+KNN,Run 24,F1 Score,0.8
+KNN,Run 24,AUC,0.9166666666666667
+KNN,Run 25 (Denoised),Training Time (seconds),0.00115203857421875
+KNN,Run 25 (Denoised),Accuracy,1.0
+KNN,Run 25 (Denoised),Precision,1.0
+KNN,Run 25 (Denoised),Recall (Sensitivity),1.0
+KNN,Run 25 (Denoised),F1 Score,1.0
+KNN,Run 25 (Denoised),AUC,1.0
+Sparse Learning,Run 24,Training Time (seconds),1741515156.749365
+Knowledge Distillation,Run 24,Accuracy,0.875
+Sparse Knowledge Distillation,Run 24,Precision,0.6666666666666666
+Sparse Learning,Run 24,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 24,F1 Score,0.8
+Sparse Knowledge Distillation,Run 24,AUC,0.9166666666666667
+Sparse Learning,Run 24,Training Time (seconds),0.0064771175384521484
+Knowledge Distillation,Run 24,Accuracy,0.875
+Sparse Knowledge Distillation,Run 24,Precision,0.6666666666666666
+Sparse Learning,Run 24,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 24,F1 Score,0.8
+Sparse Knowledge Distillation,Run 24,AUC,0.9166666666666667
+Sparse Learning,Run 24,Training Time (seconds),0.007400035858154297
+Knowledge Distillation,Run 24,Accuracy,0.875
+Sparse Knowledge Distillation,Run 24,Precision,0.6666666666666666
+Sparse Learning,Run 24,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 24,F1 Score,0.8
+Sparse Knowledge Distillation,Run 24,AUC,0.9166666666666667
+Sparse Learning (Denoised),Run 25 (Denoised),Training Time (seconds),1741515156.813087
+Knowledge Distillation (Denoised),Run 25 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 25 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 25 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 25 (Denoised),Training Time (seconds),0.0014801025390625
+Knowledge Distillation (Denoised),Run 25 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 25 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 25 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 25 (Denoised),Training Time (seconds),0.003364086151123047
+Knowledge Distillation (Denoised),Run 25 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 25 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 25 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 25 (Denoised),AUC,1.0
+Logistic Regression,Run 26,Training Time (seconds),0.03323793411254883
+Logistic Regression,Run 26,Accuracy,0.875
+Logistic Regression,Run 26,Precision,0.6666666666666666
+Logistic Regression,Run 26,Recall (Sensitivity),1.0
+Logistic Regression,Run 26,F1 Score,0.8
+Logistic Regression,Run 26,AUC,0.9166666666666667
+Logistic Regression,Run 27 (Denoised),Training Time (seconds),0.0067882537841796875
+Logistic Regression,Run 27 (Denoised),Accuracy,1.0
+Logistic Regression,Run 27 (Denoised),Precision,1.0
+Logistic Regression,Run 27 (Denoised),Recall (Sensitivity),1.0
+Logistic Regression,Run 27 (Denoised),F1 Score,1.0
+Logistic Regression,Run 27 (Denoised),AUC,1.0
+Sparse Learning,Run 26,Training Time (seconds),1741515520.734536
+Knowledge Distillation,Run 26,Accuracy,0.875
+Sparse Knowledge Distillation,Run 26,Precision,0.6666666666666666
+Sparse Learning,Run 26,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 26,F1 Score,0.8
+Sparse Knowledge Distillation,Run 26,AUC,0.9166666666666667
+Sparse Learning,Run 26,Training Time (seconds),0.012811899185180664
+Knowledge Distillation,Run 26,Accuracy,0.875
+Sparse Knowledge Distillation,Run 26,Precision,0.6666666666666666
+Sparse Learning,Run 26,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 26,F1 Score,0.8
+Sparse Knowledge Distillation,Run 26,AUC,0.9166666666666667
+Sparse Learning,Run 26,Training Time (seconds),0.009585857391357422
+Knowledge Distillation,Run 26,Accuracy,0.75
+Sparse Knowledge Distillation,Run 26,Precision,0.5
+Sparse Learning,Run 26,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 26,F1 Score,0.6666666666666666
+Sparse Knowledge Distillation,Run 26,AUC,0.8333333333333334
+Sparse Learning (Denoised),Run 27 (Denoised),Training Time (seconds),1741515520.8314197
+Knowledge Distillation (Denoised),Run 27 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 27 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 27 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 27 (Denoised),Training Time (seconds),0.007207155227661133
+Knowledge Distillation (Denoised),Run 27 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 27 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 27 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 27 (Denoised),Training Time (seconds),0.004656076431274414
+Knowledge Distillation (Denoised),Run 27 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 27 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 27 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 27 (Denoised),AUC,1.0
+XGBoost,Run 28,Training Time (seconds),0.08574914932250977
+XGBoost,Run 28,Accuracy,0.75
+XGBoost,Run 28,Precision,0.5
+XGBoost,Run 28,Recall (Sensitivity),1.0
+XGBoost,Run 28,F1 Score,0.6666666666666666
+XGBoost,Run 28,AUC,0.8333333333333334
+XGBoost,Run 29 (Denoised),Training Time (seconds),0.043836116790771484
+XGBoost,Run 29 (Denoised),Accuracy,1.0
+XGBoost,Run 29 (Denoised),Precision,1.0
+XGBoost,Run 29 (Denoised),Recall (Sensitivity),1.0
+XGBoost,Run 29 (Denoised),F1 Score,1.0
+XGBoost,Run 29 (Denoised),AUC,1.0
+Sparse Learning,Run 28,Training Time (seconds),1741518399.3343956
+Knowledge Distillation,Run 28,Accuracy,0.875
+Sparse Knowledge Distillation,Run 28,Precision,0.6666666666666666
+Sparse Learning,Run 28,Recall (Sensitivity),1.0
+Knowledge Distillation,Run 28,F1 Score,0.8
+Sparse Knowledge Distillation,Run 28,AUC,0.9166666666666667
+Sparse Learning,Run 28,Training Time (seconds),0.04895472526550293
+Knowledge Distillation,Run 28,Accuracy,0.75
+Sparse Knowledge Distillation,Run 28,Precision,0.5
+Sparse Learning,Run 28,Recall (Sensitivity),0.5
+Knowledge Distillation,Run 28,F1 Score,0.5
+Sparse Knowledge Distillation,Run 28,AUC,0.6666666666666666
+Sparse Learning,Run 28,Training Time (seconds),0.05244302749633789
+Knowledge Distillation,Run 28,Accuracy,0.75
+Sparse Knowledge Distillation,Run 28,Precision,0.5
+Sparse Learning,Run 28,Recall (Sensitivity),0.5
+Knowledge Distillation,Run 28,F1 Score,0.5
+Sparse Knowledge Distillation,Run 28,AUC,0.6666666666666666
+Sparse Learning (Denoised),Run 29 (Denoised),Training Time (seconds),1741518399.532796
+Knowledge Distillation (Denoised),Run 29 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 29 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 29 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 29 (Denoised),Training Time (seconds),0.04073214530944824
+Knowledge Distillation (Denoised),Run 29 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 29 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 29 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),AUC,1.0
+Sparse Learning (Denoised),Run 29 (Denoised),Training Time (seconds),0.04514193534851074
+Knowledge Distillation (Denoised),Run 29 (Denoised),Accuracy,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),Precision,1.0
+Sparse Learning (Denoised),Run 29 (Denoised),Recall (Sensitivity),1.0
+Knowledge Distillation (Denoised),Run 29 (Denoised),F1 Score,1.0
+Sparse Knowledge Distillation (Denoised),Run 29 (Denoised),AUC,1.0

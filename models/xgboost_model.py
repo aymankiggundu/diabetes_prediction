@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.naive_bayes import GaussianNB
+from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix
 import joblib
@@ -14,9 +14,9 @@ from sklearn.preprocessing import StandardScaler
 
 init()
 
-class GaussianNaiveBayesModel:
+class XGBoostModel:
     def __init__(self):
-        self.model = GaussianNB()
+        self.model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
 
     def train(self, X_train, y_train):
         start_time = time.time()
@@ -57,14 +57,14 @@ def sparse_learning(X_train, y_train, alpha=0.01):
 
 def knowledge_distillation(teacher_model, X_train, y_train, X_test, temperature=2):
     teacher_predictions = teacher_model.predict_proba(X_train) ** (1 / temperature)
-    student_model = GaussianNB()
+    student_model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
     student_model.fit(X_train, np.argmax(teacher_predictions, axis=1))
     return student_model
 
 def sparse_knowledge_distillation(teacher_model, X_train, y_train, X_test, alpha=0.01, temperature=2):
     lasso, scaler = sparse_learning(X_train, y_train, alpha)
     teacher_predictions = teacher_model.predict_proba(X_train) ** (1 / temperature)
-    student_model = GaussianNB()
+    student_model = XGBClassifier(use_label_encoder=False, eval_metric='logloss')
     X_train_transformed = scaler.transform(X_train)
     student_model.fit(X_train_transformed, np.argmax(teacher_predictions, axis=1))
     return student_model
@@ -80,18 +80,18 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
     # Initialize and train the model
-    nb_model = GaussianNaiveBayesModel()
-    training_time = nb_model.train(X_train, y_train)
+    xgb_model = XGBoostModel()
+    training_time = xgb_model.train(X_train, y_train)
     
     # Evaluate the model
-    accuracy, precision, recall, f1, auc, sensitivity = nb_model.evaluate(X_test, y_test)
+    accuracy, precision, recall, f1, auc, sensitivity = xgb_model.evaluate(X_test, y_test)
     
     # Get the current run count
     run_count = get_run_count('model_performance_metrics.csv')
     
     # Create a DataFrame to store the metrics
     metrics_df = pd.DataFrame({
-        'Model': ['Gaussian Naive Bayes'] * 6,
+        'Model': ['XGBoost'] * 6,
         'Run': [f'Run {run_count}'] * 6,
         'Metric': ['Training Time (seconds)', 'Accuracy', 'Precision', 'Recall (Sensitivity)', 'F1 Score', 'AUC'],
         'Value': [training_time, accuracy, precision, recall, f1, auc]
@@ -146,15 +146,15 @@ if __name__ == "__main__":
     X_train_denoised, X_test_denoised, y_train, y_test = train_test_split(X_denoised, y, test_size=0.2, random_state=42)
     
     # Train and evaluate the model on the denoised data
-    training_time_denoised = nb_model.train(X_train_denoised, y_train)
-    accuracy_denoised, precision_denoised, recall_denoised, f1_denoised, auc_denoised, sensitivity_denoised = nb_model.evaluate(X_test_denoised, y_test)
+    training_time_denoised = xgb_model.train(X_train_denoised, y_train)
+    accuracy_denoised, precision_denoised, recall_denoised, f1_denoised, auc_denoised, sensitivity_denoised = xgb_model.evaluate(X_test_denoised, y_test)
     
     # Get the current run count for denoised data
     run_count_denoised = get_run_count('model_performance_metrics.csv')
     
     # Create a DataFrame to store the metrics for denoised data
     metrics_denoised_df = pd.DataFrame({
-        'Model': ['Gaussian Naive Bayes'] * 6,
+        'Model': ['XGBoost'] * 6,
         'Run': [f'Run {run_count_denoised} (Denoised)'] * 6,
         'Metric': ['Training Time (seconds)', 'Accuracy', 'Precision', 'Recall (Sensitivity)', 'F1 Score', 'AUC'],
         'Value': [training_time_denoised, accuracy_denoised, precision_denoised, recall_denoised, f1_denoised, auc_denoised]
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     
     # Knowledge distillation on original data
     kd_start_time = time.time()
-    student_model = knowledge_distillation(nb_model.model, X_train, y_train, X_test)
+    student_model = knowledge_distillation(xgb_model.model, X_train, y_train, X_test)
     kd_training_time = time.time() - kd_start_time
     kd_predictions = student_model.predict(X_test)
     kd_predictions_binary = (kd_predictions > 0.5).astype(int)
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     
     # Sparse knowledge distillation on original data
     sparse_kd_start_time = time.time()
-    sparse_kd_model = sparse_knowledge_distillation(nb_model.model, X_train, y_train, X_test)
+    sparse_kd_model = sparse_knowledge_distillation(xgb_model.model, X_train, y_train, X_test)
     sparse_kd_training_time = time.time() - sparse_kd_start_time
     sparse_kd_predictions = sparse_kd_model.predict(scaler.transform(X_test))
     sparse_kd_predictions_binary = (sparse_kd_predictions > 0.5).astype(int)
@@ -250,7 +250,7 @@ if __name__ == "__main__":
     
     # Knowledge distillation on denoised data
     kd_start_time_denoised = time.time()
-    student_model_denoised = knowledge_distillation(nb_model.model, X_train_denoised, y_train, X_test_denoised)
+    student_model_denoised = knowledge_distillation(xgb_model.model, X_train_denoised, y_train, X_test_denoised)
     kd_training_time_denoised = time.time() - kd_start_time_denoised
     kd_predictions_denoised = student_model_denoised.predict(X_test_denoised)
     kd_predictions_denoised_binary = (kd_predictions_denoised > 0.5).astype(int)
@@ -262,7 +262,7 @@ if __name__ == "__main__":
     
     # Sparse knowledge distillation on denoised data
     sparse_kd_start_time_denoised = time.time()
-    sparse_kd_model_denoised = sparse_knowledge_distillation(nb_model.model, X_train_denoised, y_train, X_test_denoised)
+    sparse_kd_model_denoised = sparse_knowledge_distillation(xgb_model.model, X_train_denoised, y_train, X_test_denoised)
     sparse_kd_training_time_denoised = time.time() - sparse_kd_start_time_denoised
     sparse_kd_predictions_denoised = sparse_kd_model_denoised.predict(scaler_denoised.transform(X_test_denoised))
     sparse_kd_predictions_denoised_binary = (sparse_kd_predictions_denoised > 0.5).astype(int)
@@ -304,24 +304,5 @@ if __name__ == "__main__":
         additional_metrics_df.to_csv('model_performance_metrics.csv', mode='w', index=False, header=True)
         additional_metrics_denoised_df.to_csv('model_performance_metrics.csv', mode='w', index=False, header=True)
     
-    # Print results for sparse learning, knowledge distillation, and sparse knowledge distillation
-    print("\nSparse Learning Metrics (Original Data):")
-    print(f"Accuracy: {sparse_accuracy:.4f}, Precision: {sparse_precision:.4f}, Recall: {sparse_recall:.4f}, F1 Score: {sparse_f1:.4f}, AUC: {sparse_auc:.4f}")
-    
-    print("\nKnowledge Distillation Metrics (Original Data):")
-    print(f"Accuracy: {kd_accuracy:.4f}, Precision: {kd_precision:.4f}, Recall: {kd_recall:.4f}, F1 Score: {kd_f1:.4f}, AUC: {kd_auc:.4f}")
-    
-    print("\nSparse Knowledge Distillation Metrics (Original Data):")
-    print(f"Accuracy: {sparse_kd_accuracy:.4f}, Precision: {sparse_kd_precision:.4f}, Recall: {sparse_kd_recall:.4f}, F1 Score: {sparse_kd_f1:.4f}, AUC: {sparse_kd_auc:.4f}")
-    
-    print("\nSparse Learning Metrics (Denoised Data):")
-    print(f"Accuracy: {sparse_accuracy_denoised:.4f}, Precision: {sparse_precision_denoised:.4f}, Recall: {sparse_recall_denoised:.4f}, F1 Score: {sparse_f1_denoised:.4f}, AUC: {sparse_auc_denoised:.4f}")
-    
-    print("\nKnowledge Distillation Metrics (Denoised Data):")
-    print(f"Accuracy: {kd_accuracy_denoised:.4f}, Precision: {kd_precision_denoised:.4f}, Recall: {kd_recall_denoised:.4f}, F1 Score: {kd_f1_denoised:.4f}, AUC: {kd_auc_denoised:.4f}")
-    
-    print("\nSparse Knowledge Distillation Metrics (Denoised Data):")
-    print(f"Accuracy: {sparse_kd_accuracy_denoised:.4f}, Precision: {sparse_kd_precision_denoised:.4f}, Recall: {sparse_kd_recall_denoised:.4f}, F1 Score: {sparse_kd_f1_denoised:.4f}, AUC: {sparse_kd_auc_denoised:.4f}")
-
-# Save the trained model to a .pkl file
-joblib.dump(nb_model.model, 'naive_bayes_model.pkl')
+    # Save the model trained on the original data
+    joblib.dump(xgb_model.model, 'xgb_model.pkl')

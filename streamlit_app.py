@@ -5,7 +5,7 @@ import joblib
 from scipy.signal import butter, filtfilt
 
 # Load the trained decision tree model
-model = joblib.load('/Users/aymankiggundu/Desktop/BCSC/year_two/Year two Semester 2 2025/Machine Learning/ml_space_2/diabetes_prediction/models/decision_tree_model.pkl')
+model = joblib.load('/Users/aymankiggundu/Desktop/BCSC/year_two/Year two Semester 2 2025/Machine Learning/ml_space_2/diabetes_prediction/models/knn_model.pkl')
 
 st.set_page_config(page_title="Diabetes Prediction by EGG Analysis", layout="wide")
 
