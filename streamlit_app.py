@@ -5,7 +5,7 @@ import joblib
 from scipy.signal import butter, filtfilt
 
 # Load the trained decision tree model
-model = joblib.load('/Users/aymankiggundu/Desktop/BCSC/year_two/Year two Semester 2 2025/Machine Learning/ml_space_2/diabetes_prediction/models/knn_model.pkl')
+model = joblib.load('/Users/aymankiggundu/Desktop/BCSC/year_two/Year two Semester 2 2025/Machine Learning/ml_space_2/diabetes_prediction/models/decision_tree_model.pkl')
 
 st.set_page_config(page_title="Diabetes Prediction by EGG Analysis", layout="wide")
 
@@ -52,7 +52,7 @@ def predict(fasting_file, postprandial_file):
     prediction = model.predict(combined_df)
     probability = model.predict_proba(combined_df)
     
-    result = 'Diabetic' if prediction[0] == 1 else 'Non-Diabetic'
+    result = 'Diabetic' if prediction[0] == 1 else 'Healthy'
     confidence = probability[0][1] * 100 if prediction[0] == 1 else probability[0][0] * 100
     
     return result, confidence
